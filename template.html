@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Ticket Conformation</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            #t01 {
+              width: 100%;    
+              background-color: #f1f1c1;
+            }
+            </style>
+    </head>
+    <body>
+        <h3 >Ticket Confirmed!</h3>
+        <table style="width:60% " >
+            <tr>
+              <td>Name</td>
+              <td>{{this.name.fname}} {{this.name.lname}}</td> 
+              
+            </tr>
+            <tr>
+              <td>Ticket No</td>
+              <td>{{this.id}}</td>
+              
+            </tr>
+            <tr>
+                <td>Ticket Type</td>
+                <td>{{this.ticketType}}</td>
+                
+              </tr>
+            <tr>
+              <td>No of people</td>
+              <td>adult-{{this.noOfPeople.adults}} children-{{this.noOfPeople.children}}</td>
+              
+            </tr>
+            <tr>
+              <td>Date of Visit</td>
+              <td>{{this.dateOfVisit}}</td>
+              
+            </tr>
+            <tr>
+                <td>Amount Paid</td>
+                <td>{{this.amount}}</td>
+                
+              </tr>
+          </table>
+          <br>
+    </body>
+</html>
